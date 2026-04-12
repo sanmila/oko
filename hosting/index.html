@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKO — Видишь меньше. Думаешь тише.</title>
+    <meta name="description" content="OKO — оптический инструмент ручной работы. Латунь, матовое стекло, дерево. Смягчает визуальную картинку — мозг замедляется. Без приложений. Без зарядки.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================
+         1. NAVIGATION
+         ============================================ -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">OKO</a>
+            <ul class="nav__links">
+                <li><a href="#how-it-works">Как работает</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="#product" data-order-trigger>Заказать</a></li>
+            </ul>
+            <div class="nav__right">
+                <button class="nav__lang-toggle" data-lang="ru">RU</button>
+                <button class="nav__lang-toggle active" data-lang="en">EN</button>
+                <a href="#product" class="nav__cta" data-order-trigger>Заказать</a>
+                <button class="nav__menu-toggle" id="navMenuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__overlay" id="mobileMenuOverlay"></div>
+        <div class="mobile-menu__panel">
+            <div class="mobile-menu__header">
+                <span class="mobile-menu__title">Меню</span>
+                <button class="mobile-menu__close" id="mobileMenuClose" type="button" aria-label="Закрыть меню">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="mobile-menu__nav">
+                <a href="#how-it-works">Как работает</a>
+                <a href="#benefits">Преимущества</a>
+                <a href="#product" data-order-trigger>Заказать</a>
+            </nav>
+            <div class="mobile-menu__footer">
+                <div class="mobile-menu__lang">
+                    <button class="nav__lang-toggle" data-lang="ru">RU</button>
+                    <button class="nav__lang-toggle active" data-lang="en">EN</button>
+                </div>
+                <a href="#product" class="mobile-menu__cta" data-order-trigger>Заказать OKO</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- ============================================
+             HERO
+             ============================================ -->
+        <section class="hero">
+            <div class="hero__logo-display">OKO</div>
+            <div class="hero__content">
+                <span class="hero__eyebrow fade-in">Оптический инструмент</span>
+                <h1 class="hero__headline fade-in" style="--delay: 0.1s">Видишь меньше.<br>Думаешь тише.</h1>
+                <p class="hero__subtext fade-in" style="--delay: 0.2s">
+                    Уменьшает визуальную перегрузку. Мозг замедляется.<br>
+                    Без приложений. Без экрана. Без зарядки.
+                </p>
+                <div class="hero__actions fade-in" style="--delay: 0.3s">
+                    <a href="#product" class="hero__cta" data-order-trigger>Заказать OKO</a>
+                    <a href="#how-it-works" class="hero__cta hero__cta--secondary">Как это работает</a>
+                </div>
+            </div>
+            <div class="hero__image-wrapper fade-in" style="--delay: 0.15s">
+                <img src="assets/light-1.png.webp" alt="OKO optical instrument" class="hero__image" width="660" height="660">
+            </div>
+        </section>
+
+        <!-- ============================================
+             WHAT IS OKO
+             ============================================ -->
+        <section class="what-is" id="what-is">
+            <div class="what-is__container">
+                <div class="what-is__content">
+                    <span class="section-label fade-in">ЧТО ТАКОЕ OKO</span>
+                    <h2 class="what-is__title fade-in" style="--delay: 0.1s">Без батарей.<br>Без экранов.</h2>
+                    <p class="what-is__body fade-in" style="--delay: 0.15s">
+                        OKO — это оптический инструмент ручной работы.
+                        Вы поднимаете его к глазам — и мир за стеклом становится мягче.
+                    </p>
+                    <ul class="what-is__list fade-in" style="--delay: 0.2s">
+                        <li>Матовое стекло смягчает изображение</li>
+                        <li>Мозг обрабатывает меньше деталей</li>
+                        <li>Фоновое напряжение спадает</li>
+                    </ul>
+                </div>
+                <div class="what-is__image-box fade-in" style="--delay: 0.15s">
+                    <img src="assets/light-2.png.webp" alt="OKO" class="what-is__image" width="480" height="480" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             PROBLEM
+             ============================================ -->
+        <section class="problem" id="problem">
+            <div class="problem__container">
+                <span class="section-label section-label--light fade-in">ПРОБЛЕМА</span>
+                <h2 class="problem__title fade-in" style="--delay: 0.1s">Мир не останавливается.</h2>
+                <div class="problem__grid fade-in" style="--delay: 0.15s">
+                    <div class="problem__item">
+                        <p>Экраны, уведомления, мелькание информации — всё это требует от мозга непрерывной обработки. Мозг не отдыхает даже когда вы сидите неподвижно.</p>
+                    </div>
+                    <div class="problem__item">
+                        <p>Это не обычная усталость. Это постоянная фоновая нагрузка — незаметная, но изматывающая. Вы можете сидеть в тихой комнате и всё равно чувствовать себя на грани.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             EDITORIAL
+             ============================================ -->
+        <section class="editorial">
+            <div class="editorial__background"></div>
+            <div class="editorial__overlay">
+                <p class="editorial__text fade-in">Меньше деталей — меньше шума — больше тишины.</p>
+            </div>
+        </section>
+
+        <!-- ============================================
+             HOW IT WORKS
+             ============================================ -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="how-it-works__container">
+                <span class="section-label fade-in">КАК ЭТО РАБОТАЕТ</span>
+                <h2 class="how-it-works__title fade-in" style="--delay: 0.1s">Просто. Физично. Без приложений.</h2>
+                <div class="how-it-works__steps">
+                    <div class="how-it-works__step fade-in" style="--delay: 0.15s">
+                        <span class="how-it-works__num">01</span>
+                        <h3>Смягчение</h3>
+                        <p>Матовое стекло рассеивает свет. Резкие края и мелкие детали размываются. Изображение за стеклом становится мягче.</p>
+                    </div>
+                    <div class="how-it-works__step fade-in" style="--delay: 0.25s">
+                        <span class="how-it-works__num">02</span>
+                        <h3>Снижение нагрузки</h3>
+                        <p>Мозгу больше не нужно обрабатывать высокодетализированную картинку. Поток визуальной информации снижается.</p>
+                    </div>
+                    <div class="how-it-works__step fade-in" style="--delay: 0.35s">
+                        <span class="how-it-works__num">03</span>
+                        <h3>Замедление</h3>
+                        <p>Меньше входящих данных — меньше работы. Фоновое напряжение спадает. Вы начинаете замедляться.</p>
+                    </div>
+                </div>
+                <p class="how-it-works__note fade-in" style="--delay: 0.4s">
+                    Это не гипноз и не медитация. Это физика: менее детализированное изображение = меньше нагрузки на мозг.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================
+             BENEFITS
+             ============================================ -->
+        <section class="benefits" id="benefits">
+            <div class="benefits__container">
+                <span class="section-label fade-in">ПРЕИМУЩЕСТВА</span>
+                <h2 class="benefits__title fade-in" style="--delay: 0.1s">Что вы получаете.</h2>
+                <div class="benefits__grid">
+                    <div class="benefits__item fade-in" style="--delay: 0.15s">
+                        <h3>Меньше визуального шума</h3>
+                        <p>Мир за стеклом становится мягче — не размытым до неузнаваемости, а скорее как экран в ночном режиме.</p>
+                    </div>
+                    <div class="benefits__item fade-in" style="--delay: 0.2s">
+                        <h3>Фоновое напряжение снижается</h3>
+                        <p>Не сразу и не магически. Постепенно, по мере того как мозг перестаёт обрабатывать лишнее.</p>
+                    </div>
+                    <div class="benefits__item fade-in" style="--delay: 0.25s">
+                        <h3>Проще переключиться</h3>
+                        <p>После нескольких минут с OKO легче выйти из режима «быть на связи».</p>
+                    </div>
+                    <div class="benefits__item fade-in" style="--delay: 0.3s">
+                        <h3>Физический, осязаемый объект</h3>
+                        <p>Не приложение. Не подписка. Не зарядка. Вы просто берёте его в руки.</p>
+                    </div>
+                    <div class="benefits__item fade-in" style="--delay: 0.35s">
+                        <h3>Подходит для любого момента</h3>
+                        <p>Утром, когда нужен тихий старт. Вечером, когда экранная усталость накопилась. В любое время, когда мир ощущается слишком громким.</p>
+                    </div>
+                    <div class="benefits__item fade-in" style="--delay: 0.4s">
+                        <h3>Не обесценивается</h3>
+                        <p>Это механический инструмент. Будет работать так же через двадцать лет. Не устареет.</p>
+                    </div>
+                    <div class="benefits__item fade-in" style="--delay: 0.45s">
+                        <h3>Компактный и готовый</h3>
+                        <p>Умещается в ладонь. Лежит в деревянной коробке на полке — всегда под рукой.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             EXPERIENCE
+             ============================================ -->
+        <section class="experience" id="experience">
+            <div class="experience__container">
+                <div class="experience__image-col">
+                    <div class="experience__glow"></div>
+                    <img src="assets/dark-hero.png.webp" alt="OKO" class="experience__image fade-in" width="500" height="500" loading="lazy">
+                </div>
+                <div class="experience__content">
+                    <span class="section-label section-label--light fade-in">ОПЫТ</span>
+                    <h2 class="experience__title fade-in" style="--delay: 0.1s">Это изменение, не ощущение.</h2>
+                    <p class="experience__body fade-in" style="--delay: 0.15s">
+                        Когда вы впервые смотрите сквозь OKO, первое, что замечаете — края предметов смягчаются. Текстуры становятся ровнее. Свет перестаёт быть резким.
+                    </p>
+                    <p class="experience__body fade-in" style="--delay: 0.2s">
+                        Через две-три минуты размытие перестаёт быть заметным — оно просто становится нормой. Мир за стеклом просто… спокойнее.
+                    </p>
+                    <p class="experience__body fade-in" style="--delay: 0.25s">
+                        Звучит незначительно. Но для мозга, который привык работать на полной мощности даже в очереди, — это заметно.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             HOW TO USE
+             ============================================ -->
+        <section class="how-to-use" id="how-to-use">
+            <div class="how-to-use__container">
+                <span class="section-label fade-in">ИСПОЛЬЗОВАНИЕ</span>
+                <h2 class="how-to-use__title fade-in" style="--delay: 0.1s">Как использовать OKO.</h2>
+                <div class="how-to-use__steps">
+                    <div class="how-to-use__step fade-in" style="--delay: 0.1s">
+                        <span class="how-to-use__num">1</span>
+                        <p>Возьмите OKO. Приложите к глазам, как бинокль или лорнет.</p>
+                    </div>
+                    <div class="how-to-use__step fade-in" style="--delay: 0.2s">
+                        <span class="how-to-use__num">2</span>
+                        <p>Смотрите на мир. Изображение станет мягче — не размытым, а просто менее детализированным.</p>
+                    </div>
+                    <div class="how-to-use__step fade-in" style="--delay: 0.3s">
+                        <span class="how-to-use__num">3</span>
+                        <p>Оставайтесь столько, сколько нужно. Пять минут. Пятнадцать. Полчаса. Отпустите, когда фоновое напряжение спало.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             MATERIALS / CRAFTSMANSHIP
+             ============================================ -->
+        <section class="materials" id="materials">
+            <div class="materials__header">
+                <span class="section-label fade-in">МАСТЕРСТВО</span>
+                <h2 class="materials__title fade-in" style="--delay: 0.1s">Не оптимизировано.<br>Сделано вручную.</h2>
+            </div>
+            <div class="materials__content">
+                <div class="materials__left">
+                    <span class="materials__number">01</span>
+                    <div class="materials__callouts">
+                        <article class="materials__callout fade-in" style="--delay: 0.1s">
+                            <h3>Латунь</h3>
+                            <p>Литая латунь. Ручная финишная обработка. Со временем темнеет, появляется патина — это характер, не дефект.</p>
+                        </article>
+                        <article class="materials__callout fade-in" style="--delay: 0.2s">
+                            <h3>Ореховое дерево</h3>
+                            <p>Лазерная резка, ручная шлифовка. Тёплый, органичный материал в руке.</p>
+                        </article>
+                        <article class="materials__callout fade-in" style="--delay: 0.3s">
+                            <h3>Оптическое стекло</h3>
+                            <p>Матовая обработка линз. Не царапается при обычном использовании. Линзы съёмные — можно заменить.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="materials__right">
+                    <img src="assets/dark-box.png.webp" alt="OKO в коробке" class="materials__image" width="600" height="600" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             PRODUCT / PURCHASE
+             ============================================ -->
+        <section class="product" id="product">
+            <div class="product__container">
+                <div class="product__info">
+                    <span class="product__label">ОПТИЧЕСКИЙ ИНСТРУМЕНТ</span>
+                    <h2 class="product__name fade-in">OKO — №001</h2>
+                    <p class="product__tagline fade-in" style="--delay: 0.1s">Ручная работа. Латунь, матовое стекло, дерево.</p>
+
+                    <div class="product__price-box fade-in" style="--delay: 0.15s">
+                        <span class="product__price">24 900 ₽</span>
+                        <span class="product__price-note">Оплата при получении</span>
+                    </div>
+
+                    <ul class="product__specs fade-in" style="--delay: 0.2s">
+                        <li>Ручная работа</li>
+                        <li>Латунь, матовое стекло, ореховое дерево</li>
+                        <li>Использование 5–10 минут</li>
+                        <li>Без приложений и зарядки</li>
+                        <li>Деревянный футляр для хранения</li>
+                        <li>Срок изготовления: 2–4 недели</li>
+                    </ul>
+
+                    <button class="product__cta fade-in" style="--delay: 0.25s" id="productOrderBtn">
+                        Заказать OKO — 24 900 ₽
+                    </button>
+                    <p class="product__lead-time fade-in" style="--delay: 0.3s">Изготовление: 4–6 недель</p>
+                    <a href="mailto:hello@oko.co" class="product__link fade-in" style="--delay: 0.35s">Задать вопрос →</a>
+                </div>
+
+                <div class="product__visual">
+                    <img src="assets/light-2.png.webp" alt="OKO" class="product__image fade-in" width="600" height="600" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             TESTIMONIALS
+             ============================================ -->
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials__container">
+                <span class="section-label section-label--light fade-in">ОТЗЫВЫ</span>
+                <div class="testimonials__grid">
+                    <blockquote class="testimonials__item fade-in" style="--delay: 0.1s">
+                        <p>Я работаю с текстами весь день. К вечеру голова гудит, даже если физически ничего не делал. После OKO — не сразу, минут через десять — гуделка затихает. Не знаю, как объяснить, но эффект есть.</p>
+                        <footer>— Алексей, 34, редактор</footer>
+                    </blockquote>
+                    <blockquote class="testimonials__item fade-in" style="--delay: 0.2s">
+                        <p>Попробовала у знакомых и не поняла, почему не купила раньше. У меня нет медитативной практики, мне сложно «отключаться». А тут просто смотришь через стекло — и фон внутри головы становится тише.</p>
+                        <footer>— Марина, 41, архитектор</footer>
+                    </blockquote>
+                    <blockquote class="testimonials__item fade-in" style="--delay: 0.3s">
+                        <p>Скептик по натуре. Думал — развод. Но латунь тёплая в руках, стекло не царапается, выглядит как вещь, а не игрушка. И да — десять минут с OKO, и желание проверить телефон пропадает. Ценю это.</p>
+                        <footer>— Дмитрий, 38, предприниматель</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             PHILOSOPHY
+             ============================================ -->
+        <section class="philosophy">
+            <div class="philosophy__container">
+                <p class="philosophy__line fade-in">Не каждая деталь нужна вашему вниманию.</p>
+                <p class="philosophy__line fade-in" style="--delay: 0.15s">Когда вы видите меньше — вы присутствуете больше.</p>
+            </div>
+        </section>
+
+        <!-- ============================================
+             FINAL CTA
+             ============================================ -->
+        <section class="cta">
+            <div class="cta__background"></div>
+            <div class="cta__container">
+                <span class="cta__eyebrow fade-in">Вернитесь к себе.</span>
+                <h2 class="cta__headline fade-in" style="--delay: 0.1s">Мир не станет тише сам по себе.</h2>
+                <p class="cta__tagline fade-in" style="--delay: 0.2s">Но вы можете перестать реагировать на каждый его всплеск.</p>
+                <div class="cta__buttons fade-in" style="--delay: 0.3s">
+                    <button class="cta__button" id="ctaOrderBtn">Заказать</button>
+                    <a href="#how-it-works" class="cta__button cta__button--secondary">Как это работает</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="#" class="footer__logo">OKO</a>
+            <p class="footer__tagline">Оптический инструмент. Латунь, матовое стекло, дерево.</p>
+            <nav class="footer__nav">
+                <a href="#how-it-works">Как работает</a>
+                <a href="#benefits">Преимущества</a>
+                <a href="#product">Заказать</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         ORDER MODAL
+         ============================================ -->
+    <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal" id="orderModal">
+            <button class="modal__close" id="modalClose" aria-label="Закрыть">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <!-- Order form state -->
+            <div class="modal__state modal__state--form" id="modalFormState">
+                <div class="modal__header">
+                    <span class="modal__product-label">ОПТИЧЕСКИЙ ИНСТРУМЕНТ</span>
+                    <h2 class="modal__title" id="modalTitle">Заказать OKO</h2>
+                    <p class="modal__subtitle">24 900 ₽ · Срок изготовления 2–4 недели</p>
+                </div>
+
+                <form class="modal__form" id="orderForm" novalidate>
+                    <div class="modal__field">
+                        <label for="orderName">Ваше имя <span class="modal__required">*</span></label>
+                        <input type="text" id="orderName" name="name" placeholder="Иван Петров" required autocomplete="name">
+                        <span class="modal__error" id="errorName"></span>
+                    </div>
+                    <div class="modal__field">
+                        <label for="orderPhone">Телефон <span class="modal__required">*</span></label>
+                        <input type="tel" id="orderPhone" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+                        <span class="modal__error" id="errorPhone"></span>
+                    </div>
+                    <div class="modal__field">
+                        <label for="orderEmail">Email <span class="modal__required">*</span></label>
+                        <input type="email" id="orderEmail" name="email" placeholder="mail@example.com" required autocomplete="email">
+                        <span class="modal__error" id="errorEmail"></span>
+                    </div>
+                    <div class="modal__field">
+                        <label for="orderComment">Комментарий к заказу</label>
+                        <textarea id="orderComment" name="comment" rows="3" placeholder="Город доставки, пожелания..."></textarea>
+                    </div>
+                    <div class="modal__footer">
+                        <p class="modal__privacy">Нажимая «Отправить заявку», вы соглашаетесь на обработку персональных данных.</p>
+                        <button type="submit" class="modal__submit" id="submitBtn">
+                            <span class="modal__submit-text">Отправить заявку</span>
+                            <span class="modal__submit-loading">
+                                <svg class="modal__spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+                                    <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+                                </svg>
+                                Отправка...
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Success state -->
+            <div class="modal__state modal__state--success" id="modalSuccessState">
+                <div class="modal__success-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#B8964A" stroke-width="1.5">
+                        <path d="M20 6L9 17l-5-5"/>
+                    </svg>
+                </div>
+                <h2 class="modal__success-title">Заявка отправлена</h2>
+                <p class="modal__success-text">Мы свяжемся с вами в течение 24 часов для подтверждения заказа.</p>
+                <button class="modal__success-close" id="successCloseBtn">Хорошо</button>
+            </div>
+
+            <!-- Error state -->
+            <div class="modal__state modal__state--error" id="modalErrorState">
+                <div class="modal__error-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#B8964A" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 8v4M12 16h.01"/>
+                    </svg>
+                </div>
+                <h2 class="modal__error-title">Что-то пошло не так</h2>
+                <p class="modal__error-text">Попробуйте ещё раз или напишите нам на hello@oko.co</p>
+                <button class="modal__error-retry" id="errorRetryBtn">Попробовать снова</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

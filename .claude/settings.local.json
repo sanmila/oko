@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m http.server 8000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/)",
+      "Bash(powershell -Command \"Start-Process -FilePath 'python' -ArgumentList '-m', 'http.server', '8000' -WorkingDirectory 'd:\\\\websites\\\\oko 3' -WindowStyle Hidden\")",
+      "Bash(powershell -Command \"Test-NetConnection -ComputerName localhost -Port 8000 | Select-Object -Property TcpTestSucceeded\")",
+      "Bash(python3 -m http.server 8000)",
+      "Bash(npx serve:*)",
+      "Bash(powershell -Command \"Start-Process 'http://localhost:8000'\")",
+      "mcp__OpusCode__understand_image",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm)"
+    ]
+  }
+}
