@@ -77,12 +77,25 @@
 
         .highlight { color: var(--accent); font-weight: 500; }
 
+        .creator-partner { display: grid; grid-template-columns: 5.5fr 4.5fr; gap: 5.5rem; max-width: 1080px; margin: 0 auto 100px; padding: 0 5%; align-items: center; }
+        .creator-partner__images { display: block; }
+        .creator-partner__img-main { border-radius: 4px; overflow: hidden; aspect-ratio: 4/5; box-shadow: 0 12px 32px rgba(0,0,0,0.05); }
+        .creator-partner__img-main img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .creator-partner__content h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 3.5vw, 2.8rem); font-weight: 400; margin-bottom: 0.5rem; color: var(--text); line-height: 1.15; }
+        .creator-partner__content h3 { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: 2rem; }
+        .creator-partner__content p { font-size: 1.08rem; line-height: 1.95; color: var(--muted); margin-bottom: 1.4rem; text-align: justify; hyphens: auto; }
+        .creator-partner__content blockquote { border-left: 2px solid var(--accent); margin: 2rem 0 0 0; padding-left: 1.5rem; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.3rem; line-height: 1.6; color: var(--text); }
+
         @media (max-width: 768px) {
             .creator-hero { padding: 120px 5% 60px; }
             .creator-portrait { grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 60px; }
             .creator-portrait__images { order: -1; display: block; position: static; max-width: 500px; margin: 0 auto; }
             .creator-portrait__content p { text-align: left; }
             .creator-portrait__content p:first-of-type::first-letter { font-size: 3.5rem; margin-top: 4px; }
+            
+            .creator-partner { grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 60px; }
+            .creator-partner__images { order: -1; max-width: 500px; margin: 0 auto; width: 100%; }
+            .creator-partner__content p { text-align: left; }
         }
         @media (max-width: 480px) {
             .creator-hero { padding: 120px 5% 60px; }
@@ -179,6 +192,22 @@
                 <p data-en="This cinema cannot be filmed. It cannot be described precisely enough in words. It cannot be shared with another person. It has never existed before OKO. And it is unique at every moment of time.">Это кино нельзя снять. Нельзя описать достаточно точно словами. Нельзя передать другому человеку. Его не существовало до ОкО. И оно уникально в каждый момент времени.</p>
             </div>
             <p data-en="The creator's intention was not mystical — it was physical. But what users report goes beyond the expected: a deep stillness, a slowing of internal noise, and something that ancient traditions have long called the activation of the third eye — not through years of practice, but in a single session, through pure optics.">Намерение создателя было не мистическим — оно было физическим. Но то, о чём сообщают пользователи, выходит за рамки ожидаемого: глубокая тишина, замедление внутреннего шума, и то, что древние традиции давно называют активацией третьего глаза — не через годы практики, а за один сеанс, через чистую оптику.</p>
+        </section>
+
+        <!-- PARTNER STORY -->
+        <section class="creator-partner fade-in" style="--delay:0.1s">
+            <div class="creator-partner__content">
+                <h2 data-en="Gleb">Глеб</h2>
+                <h3 data-en="Official Partner of OKO">Официальный партнёр «ОкО»</h3>
+                <p data-en="Since my early years, I have been passionate about photography and entrepreneurship. I opened my first souvenir stand at the age of 10. Even though it lasted only two days and brought in a modest 150 rubles of profit, that was the moment I realized I wanted to build my own business. Later on, this passion for creation and visual aesthetics helped me build a large federal network of photo services operating across Russia.">С ранних лет меня увлекали фотография и предпринимательство. Свою первую точку по продаже сувениров я открыл ещё в 10 лет. И пусть она проработала всего два дня, принеся скромные 150 рублей прибыли, именно тогда я понял: я хочу строить своё дело. Впоследствии эта страсть к созиданию и визуальной эстетике помогла мне вырастить крупную федеральную сеть фотосервисов, представленную по всей России.</p>
+                <p data-en="Recently, fate brought me together with Sergei Strelnikov, the creator of the OKO optical instrument. Realizing the profound potential of his invention, we joined forces to make this tool available to everyone. Today, we are jointly developing our online sales and retail network.">Недавно судьба свела меня с Сергеем Стрельниковым — создателем оптического инструмента «ОкО». Осознав глубину и потенциал его изобретения, мы объединили усилия, чтобы сделать этот инструмент доступным каждому. Сегодня мы совместно развиваем онлайн-продажи и розничную сеть.</p>
+                <blockquote data-en='"I sincerely believe that our product will help you find inner silence, easily and naturally enter a meditative state — with real, tangible benefits for your mind and body."'>«Я искренне верю, что наш продукт поможет вам находить внутреннюю тишину, легко и естественно погружаться в медитативное состояние — с реальной, ощутимой пользой для ума и тела.»</blockquote>
+            </div>
+            <div class="creator-partner__images">
+                <div class="creator-partner__img-main">
+                    <img src="assets/Gleb.webp" alt="Глеб — официальный партнёр ОкО" loading="lazy">
+                </div>
+            </div>
         </section>
 
         <!-- VALUES / CRAFTSMANSHIP -->
