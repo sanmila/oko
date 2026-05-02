@@ -3,8 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OKO — Видишь меньше. Думаешь тише.</title>
-    <meta name="description" content="OKO — оптический инструмент ручной работы. Латунь, матовое стекло, дерево. Смягчает визуальную картинку — мозг замедляется. Без приложений. Без зарядки.">
+    <title>ОкО — Очки Стрельникова | Вогнутые зеркала. Живое стереокино ваших глаз.</title>
+    <meta name="description" content="ОкО (Очки Стрельникова) — оптический инструмент из вогнутых зеркал ручной работы. Микродинамика радужки и зрачка, парасимпатическая активация, медитация с открытыми глазами. Латунь, серебряные зеркала, ореховое дерево.">
+    
+    <!-- SEO & Social Meta Tags -->
+    <link rel="canonical" href="https://smotri-oko.ru/">
+    <meta name="theme-color" content="#0E0E0C">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smotri-oko.ru/">
+    <meta property="og:title" content="ОкО — Очки Стрельникова. Живое стереокино ваших глаз.">
+    <meta property="og:description" content="Вогнутые зеркала показывают микродинамику радужки и зрачка. Парасимпатическая активация, глубокий отдых глаз, медитация с открытыми глазами.">
+    <meta property="og:image" content="https://smotri-oko.ru/assets/dark-hero.png.webp">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://smotri-oko.ru/">
+    <meta name="twitter:title" content="ОкО — Очки Стрельникова. Живое стереокино ваших глаз.">
+    <meta name="twitter:description" content="Вогнутые зеркала показывают микродинамику радужки и зрачка. Парасимпатическая активация и медитация с открытыми глазами.">
+    <meta name="twitter:image" content="https://smotri-oko.ru/assets/dark-hero.png.webp">
+
+    <!-- JSON-LD Structured Data for Product -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "OKO (Очки Стрельникова)",
+      "image": [
+        "https://smotri-oko.ru/assets/dark-hero.png.webp"
+      ],
+      "description": "Оптический инструмент из вогнутых зеркал ручной работы. Наблюдение микродинамики радужки и зрачка, парасимпатическая активация, медитация с открытыми глазами.",
+      "brand": {
+        "@type": "Brand",
+        "name": "OKO"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://smotri-oko.ru/",
+        "priceCurrency": "RUB",
+        "price": "24900",
+        "priceValidUntil": "2027-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "OKO"
+        }
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -19,12 +66,13 @@
             <a href="#" class="nav__logo">OKO</a>
             <ul class="nav__links">
                 <li><a href="#how-it-works">Как работает</a></li>
-                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="theory.html">О продукте</a></li>
+                <li><a href="creator.html">Создатель</a></li>
                 <li><a href="#product" data-order-trigger>Заказать</a></li>
             </ul>
             <div class="nav__right">
                 <button class="nav__lang-toggle" data-lang="ru">RU</button>
-                <button class="nav__lang-toggle active" data-lang="en">EN</button>
+                <button class="nav__lang-toggle" data-lang="en">EN</button>
                 <a href="#product" class="nav__cta" data-order-trigger>Заказать</a>
                 <button class="nav__menu-toggle" id="navMenuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Открыть меню">
                     <span></span>
@@ -47,13 +95,14 @@
             </div>
             <nav class="mobile-menu__nav">
                 <a href="#how-it-works">Как работает</a>
-                <a href="#benefits">Преимущества</a>
+                <a href="theory.html">О продукте</a>
+                <a href="creator.html">Создатель</a>
                 <a href="#product" data-order-trigger>Заказать</a>
             </nav>
             <div class="mobile-menu__footer">
                 <div class="mobile-menu__lang">
                     <button class="nav__lang-toggle" data-lang="ru">RU</button>
-                    <button class="nav__lang-toggle active" data-lang="en">EN</button>
+                    <button class="nav__lang-toggle" data-lang="en">EN</button>
                 </div>
                 <a href="#product" class="mobile-menu__cta" data-order-trigger>Заказать OKO</a>
             </div>
@@ -67,11 +116,10 @@
         <section class="hero">
             <div class="hero__logo-display">OKO</div>
             <div class="hero__content">
-                <span class="hero__eyebrow fade-in">Оптический инструмент</span>
-                <h1 class="hero__headline fade-in" style="--delay: 0.1s">Видишь меньше.<br>Думаешь тише.</h1>
+                <span class="hero__eyebrow fade-in" id="heroEyebrow">Оптика самопознания</span>
+                <h1 class="hero__headline fade-in" style="--delay: 0.1s">Глубже погружение.<br>Меньше шума, больше тишины.</h1>
                 <p class="hero__subtext fade-in" style="--delay: 0.2s">
-                    Уменьшает визуальную перегрузку. Мозг замедляется.<br>
-                    Без приложений. Без экрана. Без зарядки.
+                    Инструмент для перезагрузки мозга
                 </p>
                 <div class="hero__actions fade-in" style="--delay: 0.3s">
                     <a href="#product" class="hero__cta" data-order-trigger>Заказать OKO</a>
@@ -90,15 +138,17 @@
             <div class="what-is__container">
                 <div class="what-is__content">
                     <span class="section-label fade-in">ЧТО ТАКОЕ OKO</span>
-                    <h2 class="what-is__title fade-in" style="--delay: 0.1s">Без батарей.<br>Без экранов.</h2>
+                    <h2 class="what-is__title fade-in" style="--delay: 0.1s">Первый инструмент,<br>который показал глазу<br>самого себя.</h2>
                     <p class="what-is__body fade-in" style="--delay: 0.15s">
-                        OKO — это оптический инструмент ручной работы.
-                        Вы поднимаете его к глазам — и мир за стеклом становится мягче.
+                        ОкО — персональный оптический инструмент без линз. Два вогнутых зеркала с серебряным напылением образуют замкнутую оптическую систему с вашим собственным зрачком. Вы видите непрерывную пульсацию радужки и зрачка — явление, которое изобретатель назвал микродинамикой. Это живое стереокино, уникальное в каждый момент.
                     </p>
                     <ul class="what-is__list fade-in" style="--delay: 0.2s">
-                        <li>Матовое стекло смягчает изображение</li>
-                        <li>Мозг обрабатывает меньше деталей</li>
-                        <li>Фоновое напряжение спадает</li>
+                        <li>Наблюдение микродинамики — пульсации зрачка в реальном времени</li>
+                        <li>Одновременное расслабление внешних и внутренних мышц глаз</li>
+                        <li>Парасимпатическая активация — снижение стресса и тревожности</li>
+                        <li>Медитация с открытыми глазами — без практики и подготовки</li>
+                        <li>Развитие интероцепции — осознание внутренних состояний</li>
+                        <li>Тренировка аккомодации и профилактика возрастных изменений зрения</li>
                     </ul>
                 </div>
                 <div class="what-is__image-box fade-in" style="--delay: 0.15s">
@@ -113,13 +163,15 @@
         <section class="problem" id="problem">
             <div class="problem__container">
                 <span class="section-label section-label--light fade-in">ПРОБЛЕМА</span>
-                <h2 class="problem__title fade-in" style="--delay: 0.1s">Мир не останавливается.</h2>
+                <h2 class="problem__title fade-in" style="--delay: 0.1s">Мозг перегружен. Глаза не отдыхают никогда.</h2>
                 <div class="problem__grid fade-in" style="--delay: 0.15s">
                     <div class="problem__item">
-                        <p>Экраны, уведомления, мелькание информации — всё это требует от мозга непрерывной обработки. Мозг не отдыхает даже когда вы сидите неподвижно.</p>
+                        <h3>Двойное напряжение.</h3>
+                        <p>Через зрение проходит 80% всей информации. В повседневной жизни мы либо смотрим вдаль, расслабляя внутренние мышцы, но нагружая внешние, — либо работаем вблизи, расслабляя внешние, но напрягая внутренние. Ни в одном обычном состоянии оба типа глазных мышц не отдыхают одновременно.</p>
                     </div>
                     <div class="problem__item">
-                        <p>Это не обычная усталость. Это постоянная фоновая нагрузка — незаметная, но изматывающая. Вы можете сидеть в тихой комнате и всё равно чувствовать себя на грани.</p>
+                        <h3>Закрыть глаза — не значит отдохнуть.</h3>
+                        <p>Даже в тишине перегруженная зрительная кора продолжает работать. Темнота закрытых глаз воспринимается нервной системой как сенсорная депривация, а не отдых. Мозгу нужна живая, но мягкая картина — физиологическая пауза, где фокус можно отпустить, а мышцы расслабить одновременно.</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +183,7 @@
         <section class="editorial">
             <div class="editorial__background"></div>
             <div class="editorial__overlay">
-                <p class="editorial__text fade-in">Меньше деталей — меньше шума — больше тишины.</p>
+                <p class="editorial__text fade-in">Вы смотрите не на отражение. Вы смотрите в живую систему — где глаз и зеркало становятся единым целым.</p>
             </div>
         </section>
 
@@ -141,26 +193,26 @@
         <section class="how-it-works" id="how-it-works">
             <div class="how-it-works__container">
                 <span class="section-label fade-in">КАК ЭТО РАБОТАЕТ</span>
-                <h2 class="how-it-works__title fade-in" style="--delay: 0.1s">Просто. Физично. Без приложений.</h2>
+                <h2 class="how-it-works__title fade-in" style="--delay: 0.1s">Оптика. Нейрофизиология. Без приложений.</h2>
                 <div class="how-it-works__steps">
                     <div class="how-it-works__step fade-in" style="--delay: 0.15s">
                         <span class="how-it-works__num">01</span>
-                        <h3>Смягчение</h3>
-                        <p>Матовое стекло рассеивает свет. Резкие края и мелкие детали размываются. Изображение за стеклом становится мягче.</p>
+                        <h3>Замкнутая система</h3>
+                        <p>Вогнутое зеркало ОкО и выпуклое тёмное зеркало вашего зрачка образуют единую оптическую систему. Каждое микродвижение зрачка мгновенно отражается и увеличивается.</p>
                     </div>
                     <div class="how-it-works__step fade-in" style="--delay: 0.25s">
                         <span class="how-it-works__num">02</span>
-                        <h3>Снижение нагрузки</h3>
-                        <p>Мозгу больше не нужно обрабатывать высокодетализированную картинку. Поток визуальной информации снижается.</p>
+                        <h3>Микродинамика</h3>
+                        <p>Вы видите то, что никогда не было видимым: непрерывную пульсацию радужки и зрачка. Два зеркала создают стереоскопическое, объёмное изображение — живое стереокино.</p>
                     </div>
                     <div class="how-it-works__step fade-in" style="--delay: 0.35s">
                         <span class="how-it-works__num">03</span>
-                        <h3>Замедление</h3>
-                        <p>Меньше входящих данных — меньше работы. Фоновое напряжение спадает. Вы начинаете замедляться.</p>
+                        <h3>Парасимпатическая активация</h3>
+                        <p>Обе группы глазных мышц расслабляются одновременно. Локус церулеус успокаивается. Зрительная кора переключается в режим мягкого покоя.</p>
                     </div>
                 </div>
                 <p class="how-it-works__note fade-in" style="--delay: 0.4s">
-                    Это не гипноз и не медитация. Это физика: менее детализированное изображение = меньше нагрузки на мозг.
+                    Это не гипноз и не медитация. Это физика: замкнутая оптическая система, в которой ваш глаз впервые видит сам себя в движении.
                 </p>
             </div>
         </section>
@@ -171,35 +223,35 @@
         <section class="benefits" id="benefits">
             <div class="benefits__container">
                 <span class="section-label fade-in">ПРЕИМУЩЕСТВА</span>
-                <h2 class="benefits__title fade-in" style="--delay: 0.1s">Что вы получаете.</h2>
+                <h2 class="benefits__title fade-in" style="--delay: 0.1s">Что даёт наблюдение.</h2>
                 <div class="benefits__grid">
                     <div class="benefits__item fade-in" style="--delay: 0.15s">
-                        <h3>Меньше визуального шума</h3>
-                        <p>Мир за стеклом становится мягче — не размытым до неузнаваемости, а скорее как экран в ночном режиме.</p>
+                        <h3>Живое стереокино</h3>
+                        <p>Вы видите пульсирующую вселенную собственной радужки — в объёме, в реальном времени. Каждый кадр уникален и неповторим.</p>
                     </div>
                     <div class="benefits__item fade-in" style="--delay: 0.2s">
-                        <h3>Фоновое напряжение снижается</h3>
-                        <p>Не сразу и не магически. Постепенно, по мере того как мозг перестаёт обрабатывать лишнее.</p>
+                        <h3>Глубокий отдых глаз</h3>
+                        <p>Единственное состояние, в котором внешние и внутренние мышцы глаза расслабляются одновременно — невозможно ни при взгляде вдаль, ни при работе вблизи.</p>
                     </div>
                     <div class="benefits__item fade-in" style="--delay: 0.25s">
-                        <h3>Проще переключиться</h3>
-                        <p>После нескольких минут с OKO легче выйти из режима «быть на связи».</p>
+                        <h3>Снижение стресса</h3>
+                        <p>Парасимпатическая нервная система активируется автоматически. Уровень кортизола снижается. Локус церулеус переходит в режим покоя.</p>
                     </div>
                     <div class="benefits__item fade-in" style="--delay: 0.3s">
-                        <h3>Физический, осязаемый объект</h3>
-                        <p>Не приложение. Не подписка. Не зарядка. Вы просто берёте его в руки.</p>
+                        <h3>Медитация без практики</h3>
+                        <p>Не нужно учиться медитировать. Оптическая система создаёт медитативное состояние через физику — с открытыми глазами.</p>
                     </div>
                     <div class="benefits__item fade-in" style="--delay: 0.35s">
-                        <h3>Подходит для любого момента</h3>
-                        <p>Утром, когда нужен тихий старт. Вечером, когда экранная усталость накопилась. В любое время, когда мир ощущается слишком громким.</p>
+                        <h3>Развитие интероцепции</h3>
+                        <p>Вы учитесь замечать внутренние состояния организма. Исследования связывают улучшение интероцепции со снижением тревожности и депрессии.</p>
                     </div>
                     <div class="benefits__item fade-in" style="--delay: 0.4s">
-                        <h3>Не обесценивается</h3>
-                        <p>Это механический инструмент. Будет работать так же через двадцать лет. Не устареет.</p>
+                        <h3>Не устаревает</h3>
+                        <p>Механический инструмент без электроники. Будет работать так же через двадцать лет. Патина латуни — это характер, не дефект.</p>
                     </div>
                     <div class="benefits__item fade-in" style="--delay: 0.45s">
                         <h3>Компактный и готовый</h3>
-                        <p>Умещается в ладонь. Лежит в деревянной коробке на полке — всегда под рукой.</p>
+                        <p>Умещается в ладонь. Лежит в деревянном футляре на полке — всегда под рукой.</p>
                     </div>
                 </div>
             </div>
@@ -216,15 +268,15 @@
                 </div>
                 <div class="experience__content">
                     <span class="section-label section-label--light fade-in">ОПЫТ</span>
-                    <h2 class="experience__title fade-in" style="--delay: 0.1s">Это изменение, не ощущение.</h2>
+                    <h2 class="experience__title fade-in" style="--delay: 0.1s">Первая встреча с собственным глазом.</h2>
                     <p class="experience__body fade-in" style="--delay: 0.15s">
-                        Когда вы впервые смотрите сквозь OKO, первое, что замечаете — края предметов смягчаются. Текстуры становятся ровнее. Свет перестаёт быть резким.
+                        Когда вы впервые смотрите в ОкО, первое, что замечаете — ваша собственная радужка, увеличенная и объёмная. Вы видите структуры, которых никогда не видели: трабекулы, крипты, пульсирующий край зрачка.
                     </p>
                     <p class="experience__body fade-in" style="--delay: 0.2s">
-                        Через две-три минуты размытие перестаёт быть заметным — оно просто становится нормой. Мир за стеклом просто… спокойнее.
+                        Через несколько минут вы замечаете главное: зрачок живёт. Он расширяется и суживается с частотой 0,5–2 Гц — это не зависит от вашей воли. Вы наблюдаете работу собственного мозга в реальном времени.
                     </p>
                     <p class="experience__body fade-in" style="--delay: 0.25s">
-                        Звучит незначительно. Но для мозга, который привык работать на полной мощности даже в очереди, — это заметно.
+                        Это не просто впечатление. Это физиологический процесс: одновременное расслабление обеих групп глазных мышц, парасимпатическая активация. Многие описывают это как глубокую тишину, появившуюся без усилий.
                     </p>
                 </div>
             </div>
@@ -236,19 +288,19 @@
         <section class="how-to-use" id="how-to-use">
             <div class="how-to-use__container">
                 <span class="section-label fade-in">ИСПОЛЬЗОВАНИЕ</span>
-                <h2 class="how-to-use__title fade-in" style="--delay: 0.1s">Как использовать OKO.</h2>
+                <h2 class="how-to-use__title fade-in" style="--delay: 0.1s">Как использовать ОкО.</h2>
                 <div class="how-to-use__steps">
                     <div class="how-to-use__step fade-in" style="--delay: 0.1s">
                         <span class="how-to-use__num">1</span>
-                        <p>Возьмите OKO. Приложите к глазам, как бинокль или лорнет.</p>
+                        <p>Возьмите ОкО. Поднесите к глазам, как бинокль — каждое зеркало напротив своего глаза.</p>
                     </div>
                     <div class="how-to-use__step fade-in" style="--delay: 0.2s">
                         <span class="how-to-use__num">2</span>
-                        <p>Смотрите на мир. Изображение станет мягче — не размытым, а просто менее детализированным.</p>
+                        <p>Смотрите в зеркала. Вы увидите увеличенное отражение собственной радужки и зрачка в объёме — живое стереокино.</p>
                     </div>
                     <div class="how-to-use__step fade-in" style="--delay: 0.3s">
                         <span class="how-to-use__num">3</span>
-                        <p>Оставайтесь столько, сколько нужно. Пять минут. Пятнадцать. Полчаса. Отпустите, когда фоновое напряжение спало.</p>
+                        <p>Наблюдайте 5–15 минут. Микродинамика зрачка покажет состояние вашего мозга. Расслабление придёт само.</p>
                     </div>
                 </div>
             </div>
@@ -275,8 +327,8 @@
                             <p>Лазерная резка, ручная шлифовка. Тёплый, органичный материал в руке.</p>
                         </article>
                         <article class="materials__callout fade-in" style="--delay: 0.3s">
-                            <h3>Оптическое стекло</h3>
-                            <p>Матовая обработка линз. Не царапается при обычном использовании. Линзы съёмные — можно заменить.</p>
+                            <h3>Вогнутые зеркала</h3>
+                            <p>Многослойное серебряное или золотое вакуумное напыление. Радиус кривизны откалиброван для наблюдения микродинамики. Без линз — только зеркала.</p>
                         </article>
                     </div>
                 </div>
@@ -294,7 +346,7 @@
                 <div class="product__info">
                     <span class="product__label">ОПТИЧЕСКИЙ ИНСТРУМЕНТ</span>
                     <h2 class="product__name fade-in">OKO — №001</h2>
-                    <p class="product__tagline fade-in" style="--delay: 0.1s">Ручная работа. Латунь, матовое стекло, дерево.</p>
+                    <p class="product__tagline fade-in" style="--delay: 0.1s">Ручная работа. Латунь, вогнутые зеркала, ореховое дерево.</p>
 
                     <div class="product__price-box fade-in" style="--delay: 0.15s">
                         <span class="product__price">24 900 ₽</span>
@@ -303,8 +355,8 @@
 
                     <ul class="product__specs fade-in" style="--delay: 0.2s">
                         <li>Ручная работа</li>
-                        <li>Латунь, матовое стекло, ореховое дерево</li>
-                        <li>Использование 5–10 минут</li>
+                        <li>Латунь, вогнутые серебряные зеркала, ореховое дерево</li>
+                        <li>Использование 5–15 минут</li>
                         <li>Без приложений и зарядки</li>
                         <li>Деревянный футляр для хранения</li>
                         <li>Срок изготовления: 2–4 недели</li>
@@ -331,15 +383,15 @@
                 <span class="section-label section-label--light fade-in">ОТЗЫВЫ</span>
                 <div class="testimonials__grid">
                     <blockquote class="testimonials__item fade-in" style="--delay: 0.1s">
-                        <p>Я работаю с текстами весь день. К вечеру голова гудит, даже если физически ничего не делал. После OKO — не сразу, минут через десять — гуделка затихает. Не знаю, как объяснить, но эффект есть.</p>
-                        <footer>— Алексей, 34, редактор</footer>
+                        <p>Я работаю по двенадцать часов за экраном. После ОкО — первый раз увидел, как мой зрачок пульсирует. Десять минут — и внутренний шум стихает. Как будто мозг наконец замолчал.</p>
+                        <footer>— Алексей, 34, предприниматель</footer>
                     </blockquote>
                     <blockquote class="testimonials__item fade-in" style="--delay: 0.2s">
-                        <p>Попробовала у знакомых и не поняла, почему не купила раньше. У меня нет медитативной практики, мне сложно «отключаться». А тут просто смотришь через стекло — и фон внутри головы становится тише.</p>
+                        <p>Я не умею медитировать — мне сложно закрыть глаза и ни о чём не думать. А тут смотришь в зеркала и видишь живую вселенную внутри собственного глаза. Тишина приходит сама.</p>
                         <footer>— Марина, 41, архитектор</footer>
                     </blockquote>
                     <blockquote class="testimonials__item fade-in" style="--delay: 0.3s">
-                        <p>Скептик по натуре. Думал — развод. Но латунь тёплая в руках, стекло не царапается, выглядит как вещь, а не игрушка. И да — десять минут с OKO, и желание проверить телефон пропадает. Ценю это.</p>
+                        <p>Скептик по натуре. Думал — красивая безделушка. Но латунь тёплая в руках, зеркала идеальные, и когда видишь свою радужку в объёме, пульсирующую — понимаешь, что это совсем не то, что ожидал.</p>
                         <footer>— Дмитрий, 38, предприниматель</footer>
                     </blockquote>
                 </div>
@@ -347,12 +399,152 @@
         </section>
 
         <!-- ============================================
+             VIDEO REVIEWS CAROUSEL
+             ============================================ -->
+        <section class="video-reviews" id="reviews">
+            <div class="video-reviews__container">
+                <span class="section-label section-label--light fade-in">ОТЗЫВЫ В ВИДЕО</span>
+                <h2 class="video-reviews__title fade-in" style="--delay: 0.1s">Они уже заглянули<br>внутрь себя.</h2>
+                <p class="video-reviews__sub fade-in" style="--delay: 0.15s">Живые отзывы — без сценария, без монтажа.</p>
+
+                <div class="vr-carousel fade-in" id="vrCarousel" style="--delay: 0.2s">
+                    <!-- Prev / Next arrows -->
+                    <button class="vr-carousel__arrow vr-carousel__arrow--prev" id="vrPrev" aria-label="Предыдущее видео">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button class="vr-carousel__arrow vr-carousel__arrow--next" id="vrNext" aria-label="Следующее видео">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+
+                    <!-- Sliding track -->
+                    <div class="vr-carousel__viewport">
+                        <div class="vr-carousel__track" id="vrTrack">
+
+                            <div class="vr-slide">
+                                <div class="vr-card">
+                                    <div class="vr-card__video-wrap">
+                                        <video class="vr-card__video" preload="none" playsinline controls poster="assets/posters/poster-1.jpg">
+                                            <source src="assets/videos/IMG_8334.MOV" type="video/mp4">
+                                        </video>
+                                        <div class="vr-card__play" aria-hidden="true">
+                                <svg class="vr-icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="vr-icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </div>
+                                    </div>
+                                    <p class="vr-card__label">Первое впечатление</p>
+                                </div>
+                            </div>
+
+                            <div class="vr-slide">
+                                <div class="vr-card">
+                                    <div class="vr-card__video-wrap">
+                                        <video class="vr-card__video" preload="none" playsinline controls poster="assets/posters/poster-2.jpg">
+                                            <source src="assets/videos/IMG_8352.MOV" type="video/mp4">
+                                        </video>
+                                        <div class="vr-card__play" aria-hidden="true">
+                                <svg class="vr-icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="vr-icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </div>
+                                    </div>
+                                    <p class="vr-card__label">Личный опыт</p>
+                                </div>
+                            </div>
+
+                            <div class="vr-slide">
+                                <div class="vr-card">
+                                    <div class="vr-card__video-wrap">
+                                        <video class="vr-card__video" preload="none" playsinline controls poster="assets/posters/poster-3.jpg">
+                                            <source src="assets/videos/IMG_8487.MOV" type="video/mp4">
+                                        </video>
+                                        <div class="vr-card__play" aria-hidden="true">
+                                <svg class="vr-icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="vr-icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </div>
+                                    </div>
+                                    <p class="vr-card__label">После месяца</p>
+                                </div>
+                            </div>
+
+                            <div class="vr-slide">
+                                <div class="vr-card">
+                                    <div class="vr-card__video-wrap">
+                                        <video class="vr-card__video" preload="none" playsinline controls poster="assets/posters/poster-4.jpg">
+                                            <source src="assets/videos/document_5325859605677380137.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="vr-card__play" aria-hidden="true">
+                                <svg class="vr-icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="vr-icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </div>
+                                    </div>
+                                    <p class="vr-card__label">Отзыв</p>
+                                </div>
+                            </div>
+
+                            <div class="vr-slide">
+                                <div class="vr-card">
+                                    <div class="vr-card__video-wrap">
+                                        <video class="vr-card__video" preload="none" playsinline controls poster="assets/posters/poster-5.jpg">
+                                            <source src="assets/videos/document_5325859605677380140.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="vr-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                    </div>
+                                    <p class="vr-card__label">Впечатления</p>
+                                </div>
+                            </div>
+
+                            <div class="vr-slide">
+                                <div class="vr-card">
+                                    <div class="vr-card__video-wrap">
+                                        <video class="vr-card__video" preload="none" playsinline controls poster="assets/posters/poster-6.jpg">
+                                            <source src="assets/videos/document_5339376142635802863.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="vr-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                    </div>
+                                    <p class="vr-card__label">Реальная история</p>
+                                </div>
+                            </div>
+
+                            <div class="vr-slide">
+                                <div class="vr-card">
+                                    <div class="vr-card__video-wrap">
+                                        <video class="vr-card__video" preload="none" playsinline controls poster="assets/posters/poster-7.jpg">
+                                            <source src="assets/videos/document_5339376142635804071.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="vr-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                    </div>
+                                    <p class="vr-card__label">Глубокий разговор</p>
+                                </div>
+                            </div>
+
+                        </div><!-- /track -->
+                    </div><!-- /viewport -->
+
+                    <!-- Dot indicators -->
+                    <div class="vr-carousel__dots" id="vrDots"></div>
+
+                    <!-- Mobile bottom nav: ← counter → -->
+                    <div class="vr-mobile-nav" id="vrMobileNav">
+                        <button class="vr-mobile-btn" id="vrMobilePrev" aria-label="Предыдущее видео">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                        <div class="vr-mobile-counter" id="vrCounter"><span>1</span> / 7</div>
+                        <button class="vr-mobile-btn" id="vrMobileNext" aria-label="Следующее видео">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div><!-- /carousel -->
+
+            </div>
+        </section>
+
+
+        <!-- ============================================
              PHILOSOPHY
              ============================================ -->
         <section class="philosophy">
             <div class="philosophy__container">
-                <p class="philosophy__line fade-in">Не каждая деталь нужна вашему вниманию.</p>
-                <p class="philosophy__line fade-in" style="--delay: 0.15s">Когда вы видите меньше — вы присутствуете больше.</p>
+                <p class="philosophy__line fade-in">Внутри вашего зрачка — бесконечность.</p>
+                <p class="philosophy__line fade-in" style="--delay: 0.15s">Вы смотрите на себя. И впервые — себя видите.</p>
             </div>
         </section>
 
@@ -362,9 +554,9 @@
         <section class="cta">
             <div class="cta__background"></div>
             <div class="cta__container">
-                <span class="cta__eyebrow fade-in">Вернитесь к себе.</span>
-                <h2 class="cta__headline fade-in" style="--delay: 0.1s">Мир не станет тише сам по себе.</h2>
-                <p class="cta__tagline fade-in" style="--delay: 0.2s">Но вы можете перестать реагировать на каждый его всплеск.</p>
+                <span class="cta__eyebrow fade-in">Загляните внутрь себя.</span>
+                <h2 class="cta__headline fade-in" style="--delay: 0.1s">Картина, которую не увидит никто, кроме вас.</h2>
+                <p class="cta__tagline fade-in" style="--delay: 0.2s">Живое стереокино собственных глаз. Уникальное в каждый момент.</p>
                 <div class="cta__buttons fade-in" style="--delay: 0.3s">
                     <button class="cta__button" id="ctaOrderBtn">Заказать</button>
                     <a href="#how-it-works" class="cta__button cta__button--secondary">Как это работает</a>
@@ -379,11 +571,14 @@
     <footer class="footer">
         <div class="footer__container">
             <a href="#" class="footer__logo">OKO</a>
-            <p class="footer__tagline">Оптический инструмент. Латунь, матовое стекло, дерево.</p>
+            <p class="footer__tagline">Оптический инструмент. Латунь, вогнутые зеркала, дерево.</p>
             <nav class="footer__nav">
                 <a href="#how-it-works">Как работает</a>
-                <a href="#benefits">Преимущества</a>
+                <a href="theory.html">О продукте</a>
                 <a href="#product">Заказать</a>
+                <a href="creator.html">Создатель</a>
+                <a href="privacy.html">Конфиденциальность</a>
+                <a href="terms.html">Соглашение</a>
             </nav>
         </div>
     </footer>

@@ -44,19 +44,25 @@
         { selectors: ['title'], type: 'text', en: 'OKO — See Less. Think Quieter.' },
         { selectors: ['meta[name="description"]'], type: 'attr', attr: 'content', en: 'OKO is a handcrafted optical instrument in brass, frosted glass, and wood. It softens visual input so the mind slows down. No app. No screen. No charging.' },
         { selectors: ['.nav__links li:nth-child(1) a', '.mobile-menu__nav a:nth-child(1)', '.hero__cta--secondary', '.cta__button--secondary', '.footer__nav a:nth-child(1)'], type: 'text', en: 'How It Works' },
-        { selectors: ['.nav__links li:nth-child(2) a', '.mobile-menu__nav a:nth-child(2)', '.footer__nav a:nth-child(2)'], type: 'text', en: 'Benefits' },
-        { selectors: ['.nav__links li:nth-child(3) a', '.nav__cta', '.mobile-menu__nav a:nth-child(3)', '.footer__nav a:nth-child(3)', '#ctaOrderBtn'], type: 'text', en: 'Order' },
+        { selectors: ['.nav__links li:nth-child(2) a', '.mobile-menu__nav a:nth-child(2)', '.footer__nav a:nth-child(2)'], type: 'text', en: 'About' },
+        { selectors: ['.nav__links li:nth-child(3) a', '.mobile-menu__nav a:nth-child(3)', '.footer__nav a:nth-child(4)'], type: 'text', en: 'Creator' },
+        { selectors: ['.nav__links li:nth-child(4) a', '.nav__cta', '.mobile-menu__nav a:nth-child(4)', '.footer__nav a:nth-child(3)', '#ctaOrderBtn'], type: 'text', en: 'Order' },
+        { selectors: ['.footer__nav a:nth-child(5)'], type: 'text', en: 'Privacy' },
+        { selectors: ['.footer__nav a:nth-child(6)'], type: 'text', en: 'Agreement' },
         { selectors: ['.mobile-menu__title'], type: 'text', en: 'Menu' },
         { selectors: ['.mobile-menu__cta', '.hero__cta[data-order-trigger]'], type: 'text', en: 'Order OKO' },
-        { selectors: ['.hero__eyebrow'], type: 'text', en: 'Optical Instrument' },
+        { selectors: ['.hero__eyebrow'], type: 'text', en: 'The Luxury of Self-Discovery' },
         { selectors: ['.hero__headline'], type: 'html', en: 'See less.<br>Think quieter.' },
-        { selectors: ['.hero__subtext'], type: 'html', en: 'Reduces visual overload. The mind slows down.<br>No apps. No screen. No charging.' },
+        { selectors: ['.hero__subtext'], type: 'html', en: 'A picture no one else will ever see.<br>No apps. No screen. No charging.' },
         { selectors: ['.what-is .section-label'], type: 'text', en: 'What Is OKO' },
-        { selectors: ['.what-is__title'], type: 'html', en: 'No batteries.<br>No screens.' },
-        { selectors: ['.what-is__body'], type: 'text', en: 'OKO is a handheld optical instrument. You lift it to your eyes — and the world behind the glass becomes softer.' },
-        { selectors: ['.what-is__list li:nth-child(1)'], type: 'text', en: 'Frosted glass softens the image' },
-        { selectors: ['.what-is__list li:nth-child(2)'], type: 'text', en: 'The mind processes fewer details' },
-        { selectors: ['.what-is__list li:nth-child(3)'], type: 'text', en: 'Background strain drops' },
+        { selectors: ['.what-is__title'], type: 'html', en: 'A Stereo Journey<br>Into Yourself.' },
+        { selectors: ['.what-is__body'], type: 'text', en: 'OKO is a personal optical instrument. Concave mirrors, tuned to each eye, form a closed optical system with your own iris. You see the living, pulsing universe inside yourself — in stereo, in real time, unique in every moment.' },
+        { selectors: ['.what-is__list li:nth-child(1)'], type: 'text', en: 'Rapid relaxation of eyes and visual brain centres' },
+        { selectors: ['.what-is__list li:nth-child(2)'], type: 'text', en: 'Reduction of anxiety and stress levels' },
+        { selectors: ['.what-is__list li:nth-child(3)'], type: 'text', en: 'Concentration of attention and thought' },
+        { selectors: ['.what-is__list li:nth-child(4)'], type: 'text', en: 'Eye muscle training, prevention of age-related vision changes' },
+        { selectors: ['.what-is__list li:nth-child(5)'], type: 'text', en: 'Meditation on physical principles — no prior practice needed' },
+        { selectors: ['.what-is__list li:nth-child(6)'], type: 'text', en: 'Medical rehabilitation and contemplation' },
         { selectors: ['.problem .section-label'], type: 'text', en: 'Problem' },
         { selectors: ['.problem__title'], type: 'text', en: 'The world does not slow down.' },
         { selectors: ['.problem__item:nth-child(1) p'], type: 'text', en: 'Screens, notifications, and the constant flicker of information all demand nonstop processing from the mind. Even when you sit still, the brain keeps working.' },
@@ -125,7 +131,7 @@
         { selectors: ['.testimonials__item:nth-child(2) footer'], type: 'text', en: '— Marina, 41, architect' },
         { selectors: ['.testimonials__item:nth-child(3) p'], type: 'text', en: 'I am skeptical by nature. I thought it was a gimmick. But the brass feels warm in the hands, the glass does not scratch, and it feels like an object, not a toy. And yes — ten minutes with OKO, and the urge to check the phone disappears. I value that.' },
         { selectors: ['.testimonials__item:nth-child(3) footer'], type: 'text', en: '— Dmitry, 38, entrepreneur' },
-        { selectors: ['.philosophy__line:nth-child(1)'], type: 'text', en: 'Not every detail deserves your attention.' },
+        { selectors: ['.philosophy__line:nth-child(1)'], type: 'text', en: 'A new living reality — inside you.' },
         { selectors: ['.philosophy__line:nth-child(2)'], type: 'text', en: 'When you see less, you are present more.' },
         { selectors: ['.cta__eyebrow'], type: 'text', en: 'Return to yourself.' },
         { selectors: ['.cta__headline'], type: 'text', en: 'The world will not grow quiet on its own.' },
@@ -153,6 +159,16 @@
         { selectors: ['.modal__close'], type: 'attr', attr: 'aria-label', en: 'Close' },
         { selectors: ['.hero__image'], type: 'attr', attr: 'alt', en: 'OKO optical instrument' },
         { selectors: ['.what-is__image', '.experience__image', '.product__image'], type: 'attr', attr: 'alt', en: 'OKO' },
+        { selectors: ['.video-reviews .section-label'], type: 'text', en: 'VIDEO REVIEWS' },
+        { selectors: ['.video-reviews__title'], type: 'html', en: 'They already looked<br>inside themselves.' },
+        { selectors: ['.video-reviews__sub'], type: 'text', en: 'Real reviews — no script, no editing.' },
+        { selectors: ['.vr-card:nth-child(1) .vr-card__label'], type: 'text', en: 'First impression' },
+        { selectors: ['.vr-card:nth-child(2) .vr-card__label'], type: 'text', en: 'Personal experience' },
+        { selectors: ['.vr-card:nth-child(3) .vr-card__label'], type: 'text', en: 'After one month' },
+        { selectors: ['.vr-card:nth-child(4) .vr-card__label'], type: 'text', en: 'Review' },
+        { selectors: ['.vr-card:nth-child(5) .vr-card__label'], type: 'text', en: 'Impressions' },
+        { selectors: ['.vr-card:nth-child(6) .vr-card__label'], type: 'text', en: 'Real story' },
+        { selectors: ['.vr-card:nth-child(7) .vr-card__label'], type: 'text', en: 'Deep conversation' },
         { selectors: ['.materials__image'], type: 'attr', attr: 'alt', en: 'OKO in its box' }
     ];
 
@@ -225,7 +241,14 @@
         var storedLang = localStorage.getItem('oko-lang') || 'ru';
 
         function setLanguage(lang) {
-            
+            document.documentElement.lang = lang;
+
+            if (lang === 'en') {
+                document.title = 'OKO — See Less. Think Quieter.';
+            } else {
+                document.title = 'OKO — Видишь меньше. Думаешь тише.';
+            }
+
             applyTranslations(lang);
 
             langBtns.forEach(function(btn) {
@@ -233,14 +256,9 @@
             });
 
             localStorage.setItem('oko-lang', lang);
-            return;
-            document.documentElement.lang = lang;
 
-            if (lang === 'en') {
-                document.title = 'OKO — See Less. Think Less.';
-            } else {
-                document.title = 'OKO — Видишь меньше. Думаешь тише.';
-            }
+            // Notify components that depend on current language
+            document.dispatchEvent(new Event('langchange'));
         }
 
         setLanguage(storedLang);
@@ -614,23 +632,30 @@
                     price: '24 900 ₽'
                 };
 
-                // Simulate API call — replace with real endpoint
-                var simulateApi = new Promise(function(resolve, reject) {
-                    setTimeout(function() {
-                        // For demo: succeed 90% of the time
-                        if (Math.random() > 0.1) {
-                            resolve(formData);
-                        } else {
-                            reject(new Error('Network error'));
+                // POST to backend
+                fetch('/api/order', {
+                    method:  'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body:    JSON.stringify(formData),
+                })
+                .then(function(resp) {
+                    return resp.json().then(function(data) {
+                        if (!resp.ok || !data.ok) {
+                            throw new Error(data.error || 'Server error');
                         }
-                    }, 1500);
-                });
-
-                simulateApi.then(function() {
-                    console.log('Order submitted:', formData);
+                        return data;
+                    });
+                })
+                .then(function() {
                     showState(successState);
-                }).catch(function() {
+                })
+                .catch(function(err) {
+                    console.error('[ORDER ERROR]', err.message);
                     showState(errorState);
+                })
+                .finally(function() {
+                    submitBtn.classList.remove('loading');
+                    submitBtn.disabled = false;
                 });
             });
         }
@@ -662,6 +687,312 @@
     // ============================================
     // INIT
     // ============================================
+    function initHeroEyebrowRotator() {
+        var el = document.getElementById('heroEyebrow');
+        if (!el) return;
+        var taglinesRU = [
+            'Роскошь самопознания',
+            'Стерео путешествие в себя',
+            'Картина, которую не увидит никто',
+            'ОкОнчательное расслабление'
+        ];
+        var taglinesEN = [
+            'The Luxury of Self-Discovery',
+            'A Stereo Journey Into Yourself',
+            'A Picture No One Else Will See',
+            'The Final Unwinding'
+        ];
+        var idx = 0;
+
+        function setTag() {
+            var lang = document.documentElement.lang;
+            el.textContent = (lang === 'en') ? taglinesEN[idx] : taglinesRU[idx];
+        }
+
+        el.classList.add('hero__eyebrow--rotating');
+        setTag();
+
+        setInterval(function() {
+            idx = (idx + 1) % taglinesRU.length;
+            setTag();
+        }, 4000);
+
+        // Re-apply when language is toggled
+        document.addEventListener('langchange', function() {
+            setTag();
+        });
+    }
+
+    function initCarousel() {
+        var carousel = document.getElementById('vrCarousel');
+        if (!carousel) return;
+
+        var track    = document.getElementById('vrTrack');
+        var dotsWrap = document.getElementById('vrDots');
+        var prevBtn  = document.getElementById('vrPrev');
+        var nextBtn  = document.getElementById('vrNext');
+        var slides   = Array.prototype.slice.call(track.querySelectorAll('.vr-slide'));
+        var total    = slides.length;
+
+        var current  = 0;
+        var perView  = 3;         // recalculated on resize
+        var gap      = 22;        // px, must match CSS gap (1.4rem ≈ 22px)
+        var isDragging = false;
+        var dragStartX = 0;
+        var dragCurrentX = 0;
+        var dragStartTransform = 0;
+
+        // Mobile nav elements
+        var mobilePrevBtn  = document.getElementById('vrMobilePrev');
+        var mobileNextBtn  = document.getElementById('vrMobileNext');
+        var mobileCounter  = document.getElementById('vrCounter');
+
+        // ── Build dots ──────────────────────────────────────
+        function buildDots() {
+            dotsWrap.innerHTML = '';
+            var numDots = Math.max(1, total - Math.floor(perView) + 1);
+            for (var i = 0; i < numDots; i++) {
+                var dot = document.createElement('button');
+                dot.className = 'vr-dot' + (i === current ? ' is-active' : '');
+                dot.setAttribute('aria-label', 'Слайд ' + (i + 1));
+                dot.dataset.idx = i;
+                dotsWrap.appendChild(dot);
+            }
+        }
+
+        // ── Recalculate perView from viewport ───────────────
+        function calcPerView() {
+            var w = window.innerWidth;
+            if (w <= 600)  return 1;
+            if (w <= 1024) return 2;
+            return 3;
+        }
+
+        // ── Get pixel offset for a given index ──────────────
+        function getOffset(idx) {
+            var slideWidth = slides[0] ? slides[0].offsetWidth : (track.offsetWidth / perView - gap * (perView - 1) / perView);
+            
+            if (perView === 1) {
+                // Mobile: perfectly center the active slide
+                var viewportWidth = document.documentElement.clientWidth;
+                var centerOffset = (viewportWidth - slideWidth) / 2;
+                // Since the caller does `track.style.transform = 'translateX(-' + offset + 'px)'`,
+                // we return (idx * (slideWidth + gap)) - centerOffset
+                return idx * (slideWidth + gap) - centerOffset;
+            } else {
+                // Desktop: left-align the track
+                return idx * (slideWidth + gap);
+            }
+        }
+
+        // ── Apply slide position ─────────────────────────────
+        function goTo(idx, animate) {
+            var maxIdx = Math.max(0, total - Math.floor(perView));
+            idx = Math.max(0, Math.min(idx, maxIdx));
+            current = idx;
+
+            if (animate === false) {
+                track.style.transition = 'none';
+            } else {
+                track.style.transition = '';
+            }
+
+            track.style.transform = 'translateX(-' + getOffset(idx) + 'px)';
+
+            // Update active class
+            slides.forEach(function(s, i) {
+                s.classList.toggle('is-active', i >= idx && i < idx + perView);
+            });
+
+            // Update dots
+            var dots = dotsWrap.querySelectorAll('.vr-dot');
+            dots.forEach(function(d, i) {
+                d.classList.toggle('is-active', i === idx);
+            });
+
+            // Update arrow disabled state
+            prevBtn.disabled = (idx === 0);
+            nextBtn.disabled = (idx >= maxIdx);
+
+            // Update mobile counter  "1 / 7"
+            if (mobileCounter) {
+                mobileCounter.innerHTML = '<span>' + (idx + 1) + '</span> / ' + total;
+            }
+            if (mobilePrevBtn) mobilePrevBtn.disabled = (idx === 0);
+            if (mobileNextBtn) mobileNextBtn.disabled = (idx >= maxIdx);
+        }
+
+        // ── Pause any playing video ──────────────────────────
+        function pauseAllVideos() {
+            slides.forEach(function(slide) {
+                var vid = slide.querySelector('video');
+                if (vid && !vid.paused) vid.pause();
+            });
+        }
+
+        // ── Resize observer ──────────────────────────────────
+        function onResize() {
+            perView  = calcPerView();
+            gap      = parseFloat(getComputedStyle(track).gap) || 22;
+            buildDots();
+            goTo(current, false);
+            // Re-enable transitions after forced snap
+            requestAnimationFrame(function() {
+                track.style.transition = '';
+            });
+        }
+
+        // ── Arrow clicks ─────────────────────────────────────
+        prevBtn.addEventListener('click', function() {
+            pauseAllVideos();
+            goTo(current - 1);
+        });
+        nextBtn.addEventListener('click', function() {
+            pauseAllVideos();
+            goTo(current + 1);
+        });
+
+        // ── Dot clicks ───────────────────────────────────────
+        dotsWrap.addEventListener('click', function(e) {
+            var dot = e.target.closest('.vr-dot');
+            if (!dot) return;
+            pauseAllVideos();
+            goTo(parseInt(dot.dataset.idx, 10));
+        });
+
+        // ── Mobile button clicks ──────────────────────────────
+        if (mobilePrevBtn) {
+            mobilePrevBtn.addEventListener('click', function() {
+                pauseAllVideos();
+                goTo(current - 1);
+            });
+        }
+        if (mobileNextBtn) {
+            mobileNextBtn.addEventListener('click', function() {
+                pauseAllVideos();
+                goTo(current + 1);
+            });
+        }
+
+        // ── Pointer / touch drag ──────────────────────────────
+        function pointerStart(e) {
+            // Don't hijack clicks on video controls or the play button
+            if (e.target.closest('video') || e.target.closest('.vr-carousel__arrow') || e.target.closest('.vr-card__play')) return;
+            isDragging    = true;
+            dragStartX    = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+            dragCurrentX  = dragStartX;
+            dragStartTransform = getOffset(current);
+            track.classList.add('is-dragging');
+        }
+
+        function pointerMove(e) {
+            if (!isDragging) return;
+            dragCurrentX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+            var delta = dragCurrentX - dragStartX;
+            track.style.transition = 'none';
+            track.style.transform  = 'translateX(' + (-dragStartTransform + delta) + 'px)';
+        }
+
+        function pointerEnd() {
+            if (!isDragging) return;
+            isDragging = false;
+            track.classList.remove('is-dragging');
+            var delta = dragCurrentX - dragStartX;
+            var threshold = track.offsetWidth * 0.12;
+            if (delta < -threshold) {
+                pauseAllVideos();
+                goTo(current + 1);
+            } else if (delta > threshold) {
+                pauseAllVideos();
+                goTo(current - 1);
+            } else {
+                goTo(current); // snap back
+            }
+        }
+
+        track.addEventListener('mousedown',   pointerStart, { passive: true });
+        track.addEventListener('mousemove',   pointerMove,  { passive: true });
+        track.addEventListener('mouseup',     pointerEnd);
+        track.addEventListener('mouseleave',  pointerEnd);
+        track.addEventListener('touchstart',  pointerStart, { passive: true });
+        track.addEventListener('touchmove',   pointerMove,  { passive: true });
+        track.addEventListener('touchend',    pointerEnd);
+
+        // ── Keyboard navigation ──────────────────────────────
+        carousel.setAttribute('tabindex', '0');
+        carousel.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft')  { pauseAllVideos(); goTo(current - 1); }
+            if (e.key === 'ArrowRight') { pauseAllVideos(); goTo(current + 1); }
+        });
+
+        // ── Resize ───────────────────────────────────────────
+        if (window.ResizeObserver) {
+            new ResizeObserver(onResize).observe(carousel);
+        } else {
+            window.addEventListener('resize', onResize, { passive: true });
+        }
+
+        // ── Init ─────────────────────────────────────────────
+        perView = calcPerView();
+        gap     = 22;
+        buildDots();
+        goTo(0, false);
+        requestAnimationFrame(function() {
+            track.style.transition = '';
+        });
+    }
+
+    function initVideoOverlays() {
+        document.querySelectorAll('.vr-card__video-wrap').forEach(function(wrap) {
+            var vid = wrap.querySelector('video');
+            var overlay = wrap.querySelector('.vr-card__play');
+            if (!vid || !overlay) return;
+            
+            var playIcon = overlay.querySelector('.vr-icon-play');
+            var pauseIcon = overlay.querySelector('.vr-icon-pause');
+            var hideTimeout;
+
+            vid.addEventListener('play', function() {
+                // Show pause icon momentarily
+                if (playIcon) playIcon.style.display = 'none';
+                if (pauseIcon) pauseIcon.style.display = '';
+                overlay.style.opacity = '1';
+                
+                clearTimeout(hideTimeout);
+                hideTimeout = setTimeout(function() {
+                    if (!vid.paused) overlay.style.opacity = '0';
+                }, 650); // fade out after a brief moment
+            });
+            
+            vid.addEventListener('pause', function() {
+                clearTimeout(hideTimeout);
+                if (pauseIcon) pauseIcon.style.display = 'none';
+                if (playIcon) playIcon.style.display = '';
+                overlay.style.opacity = '1';
+                overlay.style.pointerEvents = 'auto';
+            });
+            
+            vid.addEventListener('ended', function() {
+                clearTimeout(hideTimeout);
+                if (pauseIcon) pauseIcon.style.display = 'none';
+                if (playIcon) playIcon.style.display = '';
+                overlay.style.opacity = '1';
+                overlay.style.pointerEvents = 'auto';
+            });
+            
+            // Allow tapping the overlay to play/pause
+            overlay.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (vid.paused) {
+                    vid.play();
+                } else {
+                    vid.pause();
+                }
+            });
+        });
+    }
+
     function init() {
         initViewportGuards();
         initLanguageSwitcher();
@@ -670,6 +1001,9 @@
         initFadeAnimations();
         initSmoothScroll();
         initModal();
+        initHeroEyebrowRotator();
+        initVideoOverlays();
+        initCarousel();
     }
 
     if (document.readyState === 'loading') {

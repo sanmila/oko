@@ -1,0 +1,16 @@
+{
+  "name": "oko-server",
+  "version": "1.0.0",
+  "description": "OKO optical instrument — order backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.10.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

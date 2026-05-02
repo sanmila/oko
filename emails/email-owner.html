@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка OKO</title>
+    <style>
+        body { margin: 0; padding: 0; background: #F5F3EE; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #1A1916; }
+        .wrap { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 4px; overflow: hidden; }
+        .header { background: #1A1916; padding: 28px 32px; }
+        .logo { color: #B8964A; font-size: 22px; font-weight: 700; letter-spacing: 0.25em; text-decoration: none; }
+        .badge { display: inline-block; margin-left: 12px; background: #B8964A; color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 2px; letter-spacing: 0.1em; vertical-align: middle; }
+        .content { padding: 36px 32px; }
+        .content h1 { font-size: 20px; font-weight: 500; margin: 0 0 8px; }
+        .content .sub { color: #888; font-size: 14px; margin: 0 0 28px; }
+        .data-table { width: 100%; border-collapse: collapse; margin-bottom: 28px; }
+        .data-table th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #aaa; padding: 10px 12px; background: #F5F3EE; width: 140px; }
+        .data-table td { padding: 10px 12px; font-size: 15px; border-top: 1px solid #F0EDE7; }
+        .data-table a { color: #1A1916; }
+        .comment-box { background: #F5F3EE; border-left: 3px solid #B8964A; padding: 14px 16px; font-size: 14px; line-height: 1.6; margin-bottom: 28px; color: #555; }
+        .cta { display: inline-block; background: #B8964A; color: #fff !important; text-decoration: none; padding: 12px 24px; border-radius: 2px; font-size: 14px; font-weight: 500; letter-spacing: 0.05em; }
+        .footer { background: #1A1916; padding: 20px 32px; text-align: center; }
+        .footer p { color: #555; font-size: 12px; margin: 0; }
+        .order-id { font-family: monospace; font-size: 12px; color: #B8964A; background: #FBF9F5; border: 1px solid #E8E1D5; padding: 4px 10px; border-radius: 2px; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <a class="logo">OKO</a>
+            <span class="badge">НОВАЯ ЗАЯВКА</span>
+        </div>
+        <div class="content">
+            <h1>Поступила заявка на изготовление</h1>
+            <p class="sub">Необходимо связаться с клиентом в течение 24 часов. Заказ <span class="order-id">{{orderId}}</span></p>
+
+            <table class="data-table">
+                <tr>
+                    <th>Клиент</th>
+                    <td>{{name}}</td>
+                </tr>
+                <tr>
+                    <th>Телефон</th>
+                    <td><a href="tel:{{phone}}">{{phone}}</a></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><a href="mailto:{{email}}">{{email}}</a></td>
+                </tr>
+                <tr>
+                    <th>Товар</th>
+                    <td>ОкО — №001 &nbsp;·&nbsp; 24 900 ₽</td>
+                </tr>
+                <tr>
+                    <th>Дата заявки</th>
+                    <td>{{date}}</td>
+                </tr>
+            </table>
+
+            <div class="comment-box">
+                <strong>Комментарий к заказу:</strong><br>
+                {{comment}}
+            </div>
+
+            <a href="tel:{{phone}}" class="cta">📞 Позвонить клиенту</a>
+        </div>
+        <div class="footer">
+            <p>Автоматическое уведомление с сайта <a href="{{siteUrl}}" style="color:#B8964A;">oko.co</a></p>
+        </div>
+    </div>
+</body>
+</html>

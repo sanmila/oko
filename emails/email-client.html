@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваша заявка на ОкО принята</title>
+    <style>
+        body { margin: 0; padding: 0; background: #F5F3EE; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #1A1916; }
+        .wrap { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 4px; overflow: hidden; }
+        .header { background: #1A1916; padding: 36px 32px; text-align: center; }
+        .logo { color: #B8964A; font-size: 28px; font-weight: 700; letter-spacing: 0.3em; text-decoration: none; }
+        .header-sub { color: rgba(255,255,255,0.4); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 8px; }
+        .content { padding: 40px 32px; }
+        .content h1 { font-size: 22px; font-weight: 400; margin: 0 0 14px; line-height: 1.4; }
+        .content p { font-size: 15px; line-height: 1.75; color: #555; margin: 0 0 20px; }
+        .order-box { background: #F5F3EE; border-radius: 4px; padding: 22px 24px; margin-bottom: 28px; }
+        .order-box .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: #aaa; margin-bottom: 14px; }
+        .order-row { display: flex; justify-content: space-between; font-size: 14px; padding: 8px 0; border-bottom: 1px solid #E8E1D5; }
+        .order-row:last-child { border-bottom: none; }
+        .order-row .key { color: #888; }
+        .order-row .val { font-weight: 500; color: #1A1916; }
+        .divider { height: 1px; background: #F0EDE7; margin: 28px 0; }
+        .cta { display: inline-block; background: #B8964A; color: #fff !important; text-decoration: none; padding: 14px 28px; border-radius: 2px; font-size: 14px; font-weight: 500; letter-spacing: 0.05em; margin-bottom: 28px; }
+        .note { font-size: 13px; color: #999; line-height: 1.6; }
+        .footer { background: #1A1916; padding: 24px 32px; text-align: center; }
+        .footer p { color: #555; font-size: 12px; margin: 4px 0; }
+        .footer a { color: #B8964A; text-decoration: none; }
+        .sign { font-size: 15px; color: #1A1916; line-height: 1.7; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">OKO</div>
+            <div class="header-sub">Оптический инструмент</div>
+        </div>
+
+        <div class="content">
+            <h1>Здравствуйте, {{name}}!</h1>
+            <p>Мы получили вашу заявку на изготовление оптического инструмента ОкО. Наш мастер свяжется с вами в течение 24 часов для подтверждения заказа и уточнения деталей доставки.</p>
+
+            <div class="order-box">
+                <div class="label">Детали заявки</div>
+                <div class="order-row">
+                    <span class="key">Инструмент</span>
+                    <span class="val">ОкО — №001</span>
+                </div>
+                <div class="order-row">
+                    <span class="key">Стоимость</span>
+                    <span class="val">24 900 ₽</span>
+                </div>
+                <div class="order-row">
+                    <span class="key">Срок изготовления</span>
+                    <span class="val">4–6 недель</span>
+                </div>
+                <div class="order-row">
+                    <span class="key">Оплата</span>
+                    <span class="val">При получении</span>
+                </div>
+                <div class="order-row">
+                    <span class="key">Дата заявки</span>
+                    <span class="val">{{date}}</span>
+                </div>
+            </div>
+
+            <p>Оплата производится только после согласования всех деталей и подтверждения готовности к отправке.</p>
+
+            <div class="divider"></div>
+
+            <p>Если у вас есть вопросы — напишите нам:</p>
+            <a href="mailto:hello@oko.co" class="cta">Написать в OKO →</a>
+
+            <div class="divider"></div>
+
+            <p class="sign">С уважением,<br><strong>Команда ОкО</strong></p>
+
+            <p class="note">Вы получили это письмо, потому что оставили заявку на сайте <a href="{{siteUrl}}" style="color:#B8964A;">oko.co</a>. Если это были не вы — просто проигнорируйте это сообщение.</p>
+        </div>
+
+        <div class="footer">
+            <p><a href="{{siteUrl}}">oko.co</a></p>
+            <p>&copy; 2025 OKO. Все права защищены.</p>
+        </div>
+    </div>
+</body>
+</html>
