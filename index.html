@@ -47,6 +47,41 @@
         "seller": {
           "@type": "Organization",
           "name": "OKO"
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "RU",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 14,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/CustomerResponsibility"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "RUB"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "RU"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 14,
+              "maxValue": 28,
+              "unitCode": "d"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 2,
+              "maxValue": 7,
+              "unitCode": "d"
+            }
+          }
         }
       }
     }
@@ -580,6 +615,7 @@
                 <a href="creator.html">Создатель</a>
                 <a href="privacy.html">Конфиденциальность</a>
                 <a href="terms.html">Соглашение</a>
+                <a href="delivery.html">Доставка и возврат</a>
             </nav>
         </div>
     </footer>
