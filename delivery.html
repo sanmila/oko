@@ -1,8 +1,144 @@
-- [x] Create `delivery.html`
-- [ ] Update `index.html` footer
-- [ ] Update `creator.html` footer
-- [ ] Update `theory.html` footer
-- [ ] Update `terms.html` footer
-- [ ] Update `privacy.html` footer
-- [ ] Update `hosting/index.html` footer
-- [ ] Verify changes
+<!DOCTYPE html>
+<html lang="ru" data-title-en="Delivery & Returns | OKO Optical Instrument" data-meta-en="Delivery terms, payment options and return policy for OKO — Strelnikov's Glasses.">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка и возврат | OKO — Очки Стрельникова</title>
+    <meta name="description" content="Условия доставки, способы оплаты и политика возврата для ОкО — Очки Стрельникова.">
+    
+    <!-- SEO & Social Meta Tags -->
+    <link rel="canonical" href="https://smotri-oko.ru/delivery">
+    <meta name="theme-color" content="#F5F3EE">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smotri-oko.ru/delivery">
+    <meta property="og:title" content="Доставка и возврат | OKO">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .legal-page { padding: 160px 5% 100px; max-width: 800px; margin: 0 auto; }
+        .legal-page h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 400; margin-bottom: 0.5rem; color: var(--text); text-align: center; }
+        .legal-page .legal-date { text-align: center; color: var(--muted); font-size: 0.9rem; margin-bottom: 3rem; letter-spacing: 0.05em; }
+        .legal-page h2 { font-size: 1.35rem; margin: 2.5rem 0 1rem; font-weight: 600; color: var(--text); letter-spacing: 0.02em; }
+        .legal-page p, .legal-page li { font-size: 1.05rem; line-height: 1.85; color: var(--muted); margin-bottom: 0.9rem; }
+        .legal-page ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .legal-page a { color: var(--text); text-decoration: underline; }
+        .legal-page .legal-contact { background: rgba(0,0,0,0.03); border-left: 2px solid var(--accent); padding: 1.5rem 2rem; border-radius: 0 4px 4px 0; margin-top: 1rem; }
+        .legal-page .legal-contact p { margin: 0.3rem 0; font-size: 1rem; color: var(--text); }
+        .legal-highlight { border-left: 2px solid var(--accent); padding-left: 1.5rem; margin: 2rem 0; }
+        .legal-highlight p { font-style: italic; font-size: 1.1rem; color: var(--text); }
+    </style>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body data-page="delivery">
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo">OKO</a>
+            <ul class="nav__links">
+                <li><a href="index.html#how-it-works" data-en="How It Works">Как работает</a></li>
+                <li><a href="theory.html" data-en="About">О продукте</a></li>
+                <li><a href="creator.html" data-en="Creator">Создатель</a></li>
+                <li><a href="index.html#product" data-en="Order">Заказать</a></li>
+            </ul>
+            <div class="nav__right">
+                <button class="nav__lang-toggle" data-lang="ru">RU</button>
+                <button class="nav__lang-toggle" data-lang="en">EN</button>
+                <a href="index.html#product" class="nav__cta" data-en="Order">Заказать</a>
+                <button class="nav__menu-toggle" id="navMenuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__overlay" id="mobileMenuOverlay"></div>
+        <div class="mobile-menu__panel">
+            <div class="mobile-menu__header">
+                <span class="mobile-menu__title" data-en="Menu">Меню</span>
+                <button class="mobile-menu__close" id="mobileMenuClose" type="button" aria-label="Закрыть меню"><span></span><span></span></button>
+            </div>
+            <nav class="mobile-menu__nav">
+                <a href="index.html#how-it-works" data-en="How It Works">Как работает</a>
+                <a href="theory.html" data-en="About">О продукте</a>
+                <a href="creator.html" data-en="Creator">Создатель</a>
+                <a href="index.html#product" data-en="Order">Заказать</a>
+            </nav>
+            <div class="mobile-menu__footer">
+                <div class="mobile-menu__lang">
+                    <button class="nav__lang-toggle" data-lang="ru">RU</button>
+                    <button class="nav__lang-toggle" data-lang="en">EN</button>
+                </div>
+                <a href="index.html#product" class="mobile-menu__cta" data-en="Order OKO">Заказать OKO</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="legal-page fade-in">
+        <h1 data-en="Delivery & Returns">Доставка и возврат</h1>
+        <p class="legal-date" data-en="Last updated: May 2026">Последнее обновление: май 2026</p>
+
+        <h2 data-en="1. Production and Delivery Times">1. Сроки изготовления и доставки</h2>
+        <p data-en="OKO is a handmade optical instrument. Each item is produced to order.">ОкО — это оптический инструмент ручной работы. Каждый экземпляр производится индивидуально под заказ.</p>
+        <ul>
+            <li data-en="Production time: 2 to 4 weeks from the moment of order confirmation."><strong>Срок изготовления:</strong> от 2 до 4 недель с момента подтверждения заказа.</li>
+            <li data-en="Transit time: 2 to 7 business days depending on your location (within Russia)."><strong>Срок доставки:</strong> от 2 до 7 рабочих дней в зависимости от вашего региона (по территории РФ).</li>
+        </ul>
+        <p data-en="We deliver orders using reliable courier services such as CDEK and Russian Post. The exact delivery cost is calculated individually by our manager based on carrier rates when your order is confirmed.">Мы осуществляем доставку заказов с помощью проверенных курьерских служб (СДЭК, Почта России). Точная стоимость доставки рассчитывается индивидуально нашим менеджером по тарифам транспортной компании при подтверждении заказа.</p>
+
+        <h2 data-en="2. Payment">2. Оплата</h2>
+        <p data-en="We offer flexible payment terms to ensure your confidence and security:">Мы предлагаем гибкие условия оплаты для вашей уверенности и безопасности:</p>
+        <ul>
+            <li data-en="Cash on delivery (payment upon receipt)."><strong>Оплата при получении</strong> (наложенный платеж) после осмотра посылки в пункте выдачи или курьеру.</li>
+            <li data-en="Bank transfer (prepayment) after full agreement on the order details."><strong>Банковский перевод</strong> на реквизиты компании после полного согласования всех деталей заказа с менеджером.</li>
+        </ul>
+
+        <h2 data-en="3. Returns of Good Quality Products">3. Возврат товара надлежащего качества</h2>
+        <p data-en="According to the Russian Consumer Protection Law (Remote Sales), you have the right to refuse the product at any time before its delivery. After delivery, we offer an extended return window:">В соответствии со ст. 26.1 Закона РФ «О защите прав потребителей» (Дистанционный способ продажи товара), вы вправе отказаться от товара в любое время до его передачи. После передачи мы предоставляем расширенный срок возврата:</p>
+        <div class="legal-highlight">
+            <p data-en="You may return the product within 14 days of receipt without giving any reason.">Вы можете вернуть товар в течение <strong>14 дней</strong> с момента получения без объяснения причин.</p>
+        </div>
+        <p data-en="Return conditions:">Условия возврата:</p>
+        <ul>
+            <li data-en="The product has not been used.">Товар не был в употреблении.</li>
+            <li data-en="Its presentation, consumer properties, seals, and factory labels are preserved.">Сохранен товарный вид, потребительские свойства, пломбы, фабричные ярлыки и упаковка.</li>
+            <li data-en="You possess a document confirming the fact and conditions of purchase.">Имеется документ, подтверждающий факт и условия покупки указанного товара.</li>
+        </ul>
+        <p data-en="Shipping costs for returning goods of good quality are the responsibility of the buyer. Refunds are processed within 10 days of receiving the returned item.">При возврате товара надлежащего качества <strong>транспортные расходы оплачивает покупатель</strong>. Возврат денежных средств осуществляется в течение 10 дней с момента получения нами возвращенного товара.</p>
+
+        <h2 data-en="4. Returns of Defective Products">4. Возврат товара ненадлежащего качества</h2>
+        <p data-en="If you receive a product with a manufacturing defect, you have the right to demand:">Если вы обнаружили производственный дефект или брак, вы вправе потребовать:</p>
+        <ul>
+            <li data-en="Free replacement with a similar product.">Бесплатной замены на товар аналогичной марки (модели, артикула).</li>
+            <li data-en="A full refund of the purchase price.">Возврата уплаченной за товар суммы.</li>
+        </ul>
+        <p data-en="In the case of returning a defective product, all shipping costs are covered by the seller. Please contact us within the warranty period with photographic documentation of the defect.">При возврате товара ненадлежащего качества <strong>все расходы на пересылку берет на себя продавец</strong>. Пожалуйста, свяжитесь с нами, предоставив фото- или видеодоказательства дефекта.</p>
+
+        <h2 data-en="5. Contact Information">5. Связь с нами</h2>
+        <p data-en="If you have any questions regarding delivery, payment, or returns, please contact us:">Для оформления возврата или при возникновении вопросов по доставке и оплате, пожалуйста, свяжитесь с нами:</p>
+        <div class="legal-contact">
+            <p>ИП Стрельников С.И.</p>
+            <p>Email: <a href="mailto:hello@oko.co">hello@oko.co</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="index.html" class="footer__logo">OKO</a>
+            <p class="footer__tagline" data-en="Optical instrument. Brass, concave mirrors, wood.">Оптический инструмент. Латунь, вогнутые зеркала, дерево.</p>
+            <nav class="footer__nav">
+                <a href="index.html#how-it-works" data-en="How It Works">Как работает</a>
+                <a href="theory.html" data-en="About">О продукте</a>
+                <a href="index.html#product" data-en="Order">Заказать</a>
+                <a href="creator.html" data-en="Creator">Создатель</a>
+                <a href="privacy.html" data-en="Privacy">Конфиденциальность</a>
+                <a href="terms.html" data-en="Agreement">Соглашение</a>
+                <a href="delivery.html" data-en="Delivery & Returns">Доставка и возврат</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="page-script.js"></script>
+</body>
+</html>
